@@ -354,10 +354,10 @@ Epoch 0 | Training snapshot saved at snapshot.pt
 
 
 ## Summary
-We also did some benchmarking on the time aspects. For all of our setup we compare the time taken to load and run the model using two different approach. i.e. Using the containerized approach and the LUMI container wrapper approach. Table below summarize it:
+We also did some benchmarking on the time aspects. For all of our setup we compare the time taken to load the data and run the model using two different approach. i.e. Using the containerized approach and the LUMI container wrapper approach. Table below summarize it:
 
-| Configuration                  | Container Wrapper | Container | Epoch Ran | Batch Size |
+| Configuration                  | Container Wrapper time(secs) | Container time(secs) | Epoch Ran | Batch Size |
 |--------------------------------|-------------------|-----------|-----------|------------|
-| Single GPU                     | 29 seconds         | 8 seconds | 10        | 32         |
-| Multi GPU Single Node          | 19.06 seconds     | 10.28 seconds  | 50     | 32         |
-| Multiple GPU, Multiple Node    | 22.39 seconds     | 11.52 seconds | 50        | 32         |
+| Single GPU                     | 29                | 8         | 10        | 32         |
+| Multi GPU Single Node          | 19.06             | 10.28     | 50        | 32         |
+| Multiple GPU, Multiple Node    | 22.39             | 11.52     | 50        | 32         |
